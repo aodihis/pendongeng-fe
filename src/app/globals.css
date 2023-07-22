@@ -93,19 +93,20 @@ h1, h2, h3 {
 }
 
 .result-page .bottom-nav {
-    background-color: #14274E;
+    background-color: #F1F6F9;
+    border-top:solid 1px #14274E;
 }
 
 .result-page .bottom-nav button {
-    background-color: #F1F6F9 !important;
+    background-color: #14274E !important;
     border-color: #949494 !important;
-    color: #14274E !important;
+    color: #F1F6F9 !important;
     padding-left: 50px !important;
     padding-right: 50px !important;
 }
 
 .result-page .bottom-nav button:hover {
-    background-color: #14274E !important;
+    background-color: #000000 !important;
     border-color: #949494 !important;
     color: #F1F6F9 !important;
     padding-left: 50px !important;
