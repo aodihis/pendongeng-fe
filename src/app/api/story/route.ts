@@ -42,7 +42,5 @@ export async function POST(request: NextRequest) {
         responseData.story.push(value)
     })
 
-    console.log(responseData)
-
   return NextResponse.json(responseData)
 }
