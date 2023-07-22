@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={"bg-body-midnight-express"} suppressHydrationWarning={true} >{children}</body>
+      <body suppressHydrationWarning={true} >{children}</body>
     </html>
   )
 }

@@ -1,7 +1,133 @@
 body {
-    background-color: lightblue;
+    background-color: white;
 }
 
-.bg-body-midnight-express {
+h1, h2, h3 {
+    text-transform: capitalize;
+}
+
+.form-page {
+    background-color: #F1F6F9;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.form-page h3 {
+    color: #14274E;
+}
+
+@media (min-width: 768px) {
+    .form-page {
+        background-color: #14274E;
+    }
+
+    .form-page h3 {
+        color: #F1F6F9;
+    }
+}
+
+
+.result-page {
+    background-color: #F1F6F9;
+    height: 100vh;
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.form-dongeng-block {
+    background-color: #F1F6F9;
+    font-size: 18px;
+    color: black;
+}
+
+.form-dongeng-block .form-control:focus {
+    border: 2px solid #14274E;
+}
+
+.form-dongeng-block .form-select:focus{
+    border: 2px solid #14274E;
+}
+
+.form-dongeng-block .form-select {
+    border: 1px solid #394867;
+}
+
+.form-dongeng-block .form-control {
+    border: 1px solid #394867;
+}
+
+.form-dongeng-block button {
+    border-radius: var(--bs-border-radius-pill)!important;
+    width: 75%;
+    background-color: #9BA4B4;
+    border-color: #14274E;
+    color: #F1F6F9;
+}
+
+.form-dongeng-block button:hover {
+    border-radius: var(--bs-border-radius-pill)!important;
+    width: 75%;
     background-color: #14274E;
+    border-color: #14274E;
+    color: #F1F6F9;
+}
+
+.button-nav-back {
+    background-color: #14274E !important;
+    border-color: #949494 !important;
+    color: #F1F6F9 !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.button-nav-back:hover {
+    background-color: #949494 !important;
+    border-color: #949494 !important;
+    color: #F1F6F9 !important;
+}
+
+.result-page .nav .items {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+@media (min-width: 768px) {
+    .result-page .nav .items{
+        margin-left: 7vh;
+        margin-right: 7vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .result-page .nav .items{
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 80;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.loading-spinner-area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font: 14px arial;
 }

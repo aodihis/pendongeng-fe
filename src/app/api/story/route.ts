@@ -5,6 +5,7 @@ const apiKey : string = process.env.OPENAI_SK_KEY as string
 
 export async function POST(request: NextRequest) {
     const dataToSent: any = await request.json();
+    console.log(dataToSent)
     const requestHeaders: HeadersInit = new Headers();
     requestHeaders.set('Content-Type', 'application/json');
     requestHeaders.set('openai_key',apiKey);
@@ -18,6 +19,8 @@ export async function POST(request: NextRequest) {
         story: string
     } = await res.json();
     const story =  receiveData.story;
+
+    console.log(story)
     const parsedData = story.split('\n\n')
     let responseData: {
         title: string,
