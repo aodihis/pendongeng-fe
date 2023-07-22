@@ -87,9 +87,12 @@ const FormDiv = ({setResults}  : props) => {
       }
       <Container fluid>
         <Row className='mb-5 mt-5'>
-          <h3 className='text-center'>Dongeng Sebelum Tidur</h3>
-          <Col xs={12} sm={4} md={6} lg={4} className='mx-auto mt-5 mb-3 form-dongeng-block'>
-              <Form className='mx-1 my-5 m-sm-5' method='post' onSubmit={handleSubmit}>
+          <h1 className='text-center'>Sang Pendongeng</h1>
+          <Col md={12}>
+            <p className='tagline text-center mx-auto'>Selamat datang di Sang Pendongeng: Aplikasi untuk Menghadiran Dunia Dongeng ke Imajinasi Anak-anak.</p>
+          </Col>
+          <Col xs={12} sm={4} md={6} lg={4} className='mx-auto mt-3 mt-md-5 mb-3 form-dongeng-block'>
+              <Form className='mx-1 my-3 my-md-5 m-sm-5' method='post' onSubmit={handleSubmit} autoComplete='off'>
                 <Form.Group className="mb-3" controlId="age">
                   <Form.Label>Umur Anak</Form.Label>
                   <Form.Control type="number" name='age' placeholder="Masukan umur anak" required />

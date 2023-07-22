@@ -11,14 +11,8 @@ type props = {
 }
 const Results = ({results}  : props) => {
     return (
-        <>
-        <Nav className="justify-content-end my-3">
-           <Container className="justify-content-end d-flex items">
-                <Button className="button-nav-back" onClick={ () => {location.reload();}}>Kembali</Button>
-           </Container>
-        </Nav>
-            
-        <Container className="mx-auto">
+        <>  
+        <Container className="mx-auto my-5">
             <Row className="justify-content-center">
                 <Col lg={9}>
                     <h1>{results.title}</h1>
@@ -31,6 +25,16 @@ const Results = ({results}  : props) => {
                 </Col>
             </Row>
         </Container>
+        <div className="fixed-bottom bottom-nav">
+            <Container className="mx-auto my-2">
+                <Row className="justify-content-center">
+                    <Col lg={4} className="text-center">
+                        <Button className="button-nav-back button" onClick={ () => {location.reload();}}>Generate Cerita Baru</Button>
+                    </Col>
+                </Row>
+                    
+            </Container>
+        </div>
     </>
     )
   }

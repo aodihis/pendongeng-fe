@@ -13,6 +13,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Sang Pendongeng</title>
+        <link
+          rel="icon"
+          href="/icon.svg"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body suppressHydrationWarning={true} >{children}</body>
     </html>
   )

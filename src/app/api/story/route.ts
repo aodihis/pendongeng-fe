@@ -19,8 +19,6 @@ export async function POST(request: NextRequest) {
         story: string
     } = await res.json();
     const story =  receiveData.story;
-
-    console.log(story)
     const parsedData = story.split('\n\n')
     let responseData: {
         title: string,
